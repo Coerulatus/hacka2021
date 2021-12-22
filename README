@@ -1,0 +1,15 @@
+This repository contains the text and my solution for the hack@Roma that I attented in December of 2021. 
+My solution implements a montecarlo-like algorithm in which cameras are planted with a certain probability. This probability decreases based on how many cells the camera covers and on how many cameras are around. How much the probability decreases is controlled by another parameter.
+Basic approach is to do a gridsearch of the two parameters. The solutions are evaluated based on the rules given by the problem. Solutions tht exceed the maximum cost are discarded.
+
+
+TO FIX:
+- evaluation didn't give exact results, still pretty close (<10000 on a score of over 2Mil)
+- add comments to explain code
+- set good test parameters
+
+TO ADD:
+- change probability based on distance from dataline (this influences the cost a lot)
+
+GOAL:
+- best result got a score of ~3Mil
